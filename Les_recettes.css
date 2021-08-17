@@ -1,0 +1,136 @@
+:root
+{
+    --policeTitre : "Harry P";
+    --policetaille : 25px;
+    --policerecette : "Cute Notes";
+    --couleurRecette : orange ;
+}
+
+
+@font-face 
+{
+    font-family: "Harry P";
+    src: url("harry_p/HARRYP__.TTF");
+}
+@font-face 
+{
+    font-family: "Cute Notes" ;
+    src: url("cute_notes/Cute\ Notes.ttf");
+}
+
+.recette
+{
+    height: 650px;
+    width: 100%;
+    border: solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.platPrincipal
+{
+    height: 50px;
+    width: 80%;
+    border: solid green;
+    font-weight: bold;
+    font-family: var(--policerecette);
+    color: var(--couleurRecette);
+}
+
+.titreRecette
+{
+    height: 50px;
+    width: 80%;
+    font-size: 50px;
+    border: solid rgb(133, 46, 94);
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--policerecette);
+    color: var(--couleurRecette);
+}
+.titre
+{
+    color: green;
+    font-family: var(--policeTitre);
+    font-size: var(--policetaille);
+}
+
+.listeIngredient
+{
+    margin-left: 5px;
+}
+
+.listeIngredient input
+{
+    border: none;
+    font-family: var(--policeTitre);
+    color: var(--couleurRecette);
+    font-size: 15px;
+    width: 30px;
+
+}
+
+.ingredient
+{
+    height: 150px;
+    width: 40%;
+    border: solid blue;
+}  
+
+.boiteIngredient
+{
+    display: flex;
+}
+
+.nbPersonne
+{
+    text-align: center;
+    width: 30px;
+    font-family: var(--policeTitre);
+    color: var(--couleurRecette);
+}
+
+
+.photo
+{   
+    height: 150px;
+    border: solid purple;
+    text-align: center;
+}
+
+.photo img
+{
+    height: 150px;
+}
+
+.details
+{
+    height: 150px;
+    width: 80%;
+    border: solid burlywood;
+    left: 10%;
+}
+.donnees
+{
+    height: 150px;
+    width: 80%;
+    border: solid yellow;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prix, .difficulte, .temps
+{
+    width: 25%;
+    border: solid red;
+    text-align: center;
+}
+
+.donneeTemps, .donneePrix, .donneeDifficulte
+{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+}
